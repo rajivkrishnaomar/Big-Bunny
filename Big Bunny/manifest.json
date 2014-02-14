@@ -1,0 +1,22 @@
+{
+   "background":  "background.html",	
+      "browser_action": {
+      "default_icon": "images/icon.png",
+      "default_title": "Big Bunny",
+      "popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/idle.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "description": "Keeps track of how much time you spend on various web sites.",
+   "icons": {
+      "128": "images/icon.png"
+   },
+   "name": "Big Bunny",
+   "options_page": "options.html",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.9",
+   "manifest_version": 2
+}
